@@ -2,47 +2,65 @@
     font-family: "배달의민족";
     src: url("./BMJUA_TTF.TTF");
 }
+html{
+    -ms-user-select: none; 
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
 body{
-    background-color: white;
+    background-color: #008080;
+    margin : 0;
 }/**/
 .total{
-    border: 3px solid black;
+    border: 0px;
 }/*전체 head,body,foot을 묶는 div*/
+.greetings{
+    padding: 30px;
+}
 .header{
     width: 100%;
     height: 150px;
-    background-color: #B84BFF;
+    background-color: #FCDDCC;
+    border-bottom: 2px dotted dimgray;
 }/*Header div*/
 .title{
     font-family: "배달의민족";
     text-align: center;
-    padding: 20px 50px;
+    padding: 10px;
     font-weight: 900;
     font-size: 400%;
 }/*가장 위에 제목을 표현하는 css*/
+.subTitle{
+    font-family: "배달의민족";
+    text-align: center;
+}/*부제목*/
 .body{
     width: 100%;
     height: 600px;
-    background-color: white;
+    background-color: #FCDDCC;
     display: table;
 }/*Body div*/
 .toggle_list_title{
     display: inline;
-    font-family: "배달의민족";
+    font-family: "배달의민족";;
 }/*토글 리스트의 제목을 꾸미기 위한 css*/
 .contents{
     text-align: center;
+    font-family: "배달의민족";
+    padding: 20px;
 }/*body부분의 내용을 뜻하는 css*/
 .icon{
-    width: 50px;
+    width: 30px;
     height: 30px;
-}
+}/*icon들의 크기를 정해놓은 css*/
 .my_schools{
     margin: 0;
     padding: 0;
     font-size: 20px;
     font-family: "배달의민족";
     font-weight: lighter;
+
 }/*학력들 리스트*/
 
 .my_schools,#toggle{
@@ -50,9 +68,6 @@ body{
 }/*my_school과 체크박스 버튼을 안보이게 설정*/
 #toggle:checked + .my_schools{display: inline;}
 /*체크박스가 클릭되면 my_schools가 보이게 설정*/
-#toggle:hover {
-    cursor: auto;
-}
 
 .works{
     padding: 0;
@@ -60,7 +75,7 @@ body{
     font-size: 20px;
     font-family: "배달의민족";
     font-weight: lighter;
-}
+}/*작업물 토글리스트 내용*/
 .works , #toggle2{
     display: none;
 }/*works와 체크박스를 숨김*/
@@ -75,6 +90,32 @@ body{
     font-size: 40px;
     font-weight: bold;
 }/*작업물을 소개하는 부분*/
+.my_dream{
+    font-size: 40px;
+    font-weight: bold;
+}/*꿈을 소개하는 부분*/
+.dream{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.dream ,#toggle3{
+    display: none;
+}
+#toggle3:checked + .dream{display: inline;}
+.promise{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.my_promise{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.my_promise,#toggle4{
+    display: none;
+}
+#toggle4:checked + .my_promise{
+    display: inline;
+}
 .my_img1{
     width: 300px;
     height: 300px;
@@ -82,7 +123,7 @@ body{
     margin:20;
     border-radius: 70%;
     border: 2px solid black;
-}
+}/*왼쪽에 정렬된 프로필 사진*/
 .my_img2{
     width: 300px;
     height: 300px;
@@ -90,15 +131,16 @@ body{
     margin: 20;
     border-radius: 70%;
     border: 2px solid black;
-}
+
+}/*오른쪽에 정렬된 프로필 사진*/
 .footer{
     width: 100%;
     height: 200px;
-    background-color: #D697FF;
+    background-color: #008080;
     text-align: center;
     font-family: "배달의민족";
     display: table;
 }/*Footer div*/
 .footer_contents{
     padding: 10;
-}
+}/*footer의 컨텐츠*/
